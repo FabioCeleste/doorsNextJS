@@ -1,0 +1,61 @@
+.area {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--door-width);
+    height: var(--door-height);
+    margin: 5px;
+}
+
+.structure {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+    border-left: 5px solid brown;
+    border-top: 5px solid brown;
+    border-right: 5px solid brown;
+    width: 90%;
+    background-color: #1115;
+}
+
+.door {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: chocolate;
+    align-items: center;
+    padding: 15px;
+}
+
+.number {
+    font-size: 3rem; 
+}
+
+.floor {
+    height: 10px;
+    width: 100%;
+    background-color: #ddd;
+}
+
+.handle {
+    position: absolute;
+    align-self: flex-start;
+    top: calc(0.45 * var(--door-height));
+    height: 20px;
+    width: 20px;
+    border-radius: 10px; 
+    background-color: brown;
+}
+
+.selected {
+    border-left: 5px solid yellow;
+    border-top: 5px solid yellow;
+    border-right: 5px solid yellow;
+}
+.selected .number {
+    color: yellow;
+}
+.selected .handle {
+    background-color: yellow;
+}
